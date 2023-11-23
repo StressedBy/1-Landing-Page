@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&family=Manrope:wght@200;300;400;500;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+span{
+    font-weight: 900;
+}
+
+.span_laranja{
+    color: #E53F2E;
+}
+
+section{
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: 900px;
+}
+
+#intro_img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 622px;
+    max-height: 900px;
+}
+
+#texto_intro{
+    margin-top: 8% ;
+    margin-left: 18%;
+    position: absolute;
+    font-size: 40px;
+    width: 637px;
+    height: 240px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.fundo_cinza{
+    width: 100%;
+    height: 450px;
+    background-color: #aaa;   
+}
+
+.fundo_branco{
+    width: 100%;
+    height: 450px;
+    background-color: #fff;
+}
+
+.fundo_branco h2{
+    position: absolute;
+    margin-top: 10px;
+    left: 22.5rem;
+    font-size: 40px;
+}
+
+.a_video{
+    background-color: #E53F2E;
+}
+
+.a_salarios{
+    background-color: #aaa;
+}
+
+#footer_copyright{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #040303;
+    color: #F5F5F5;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100%;
+}
+
+.slider_space{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    left: 21rem;
+    bottom: 5rem;
+    border-radius: .5rem;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0, 0, 0.25);
+}
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 600px;
+    overflow-y: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0, 0, 0.25);
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider_nav{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    right: 1rem;
+    bottom: 45%;
+}
+
+.slider_nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.slider_nav a:hover{
+    opacity: 1;
+}
+
+
+.a_video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/bgpattern.png);
+    background-position: center;
+}
+
+.a_video div{
+    overflow-y: hidden;
+    width: 1080px;
+    height: 607.50px;
+    background: #fff;
+    margin: 0;
+    z-index: 1;
+    border-radius: 0.5rem;
+}
+
+
