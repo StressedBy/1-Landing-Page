@@ -19,19 +19,19 @@ span{
 }
 
 h2{
-    font-size:2rem;
+    font-size:1.5rem;
     color: #f5f5f5;
     text-transform: uppercase;
 }
 
 h3{
-    font-size: 1.25rem;
+    font-size: 1.0rem;
     color: #f5f5f5;
     text-transform: uppercase;
 }
 
 h4{
-    font-size: 0.65rem;
+    font-size: 0.55rem;
     color: #f5f5f5;
     font-weight: 400;
     text-transform: uppercase;
@@ -46,7 +46,7 @@ h4{
     color: #7939FF;
 }
 .container{
-    height: 48rem;
+    height: 40rem;
     display: flex;
     justify-content: center;
     margin-top: 3rem;
@@ -55,7 +55,7 @@ h4{
 
 .video{
     height: 70vh;
-    width: 70vw;
+    width: 65vw;
 }
 
 .video iframe{
@@ -80,6 +80,7 @@ h4{
 }
 
 .video_frame h2{
+    font-size: 2rem;
     align-self: center;
     justify-self: center;
     margin-bottom: 2rem;
@@ -123,6 +124,16 @@ h4{
     max-width: 50%;
     justify-self: center;
     align-self: center;
+}
+
+.forms h2{
+    align-self: center;
+    justify-self: center;
+}
+
+.forms h4{
+    align-self: center;
+    justify-self: center;
 }
 
 #input_group{
@@ -236,12 +247,16 @@ h4{
 }
 
 .info_text img{
+    align-self: center;
+    justify-self: center;
     padding-top: 2rem;
     max-width: 80%;
     margin-bottom: 2rem;
 }
 
 .info_text{
+    display: flex;
+    flex-direction: column;
     width: 30vw;
     padding: 0 2rem;
 }
@@ -253,6 +268,7 @@ h4{
     border-right: none;
     margin-top: 1rem;
     padding-left: 2rem;
+    align-self: center;
 }
 
 .benefits{
@@ -261,6 +277,7 @@ h4{
 }
 
 .benefit {
+    margin-top: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
