@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap');
 
+@import url('https://fonts.cdnfonts.com/css/lemonmilk');
+
 *{
     padding: 0;
     margin: 0;
@@ -9,7 +11,7 @@
 }
 
 body{
-    background: #727D83;
+    background: #040408;
 }
 
 span{
@@ -19,53 +21,108 @@ span{
 h2{
     font-size:2rem;
     color: #f5f5f5;
+    text-transform: uppercase;
 }
 
 h3{
     font-size: 1.25rem;
     color: #f5f5f5;
+    text-transform: uppercase;
 }
 
 h4{
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     color: #f5f5f5;
     font-weight: 400;
-}
-.yellow{
-    color: #FFBA08;
-}
-
-.red{
-    color: #DA0303;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
 }
 
-.blue{
-    color: #3AAFB9;
+.orange{
+    color: #F72900;
+}
+
+.purple{
+    color: #7939FF;
 }
 .container{
     height: 48rem;
     display: flex;
     justify-content: center;
-    padding: 4%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.video{
+    height: 70vh;
+    width: 70vw;
+}
+
+.video iframe{
+    border-radius: 10px;
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+.video iframe:hover{
+    opacity: 1.5;
+}
+
+.video_frame{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.video_frame h2{
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 2rem;
 }
 
 .intro{
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
-    height: 110%;
-    width: 30rem;
-    background: #080708;
+    margin: 2rem;
+    height: 95%;
+    width: 30%;
+    background: #16202B;
     border-radius: 10px;
 }
 
+.intro img{
+    margin-top: 3rem;
+    max-width: 70%;
+    justify-self: center;
+    align-self: center;
+}
+
 .intro h2{
+    margin-top: 2rem;
+    align-self: center;
+    justify-content: center;
     max-width: 500px;
 }
 
 .forms{
-    margin-top: 1rem;
-    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
     height: 600px;
-    width: 500px;
+    width: 30%;
+}
+
+.forms img{
+    margin-top: 1rem;
+    max-width: 50%;
+    justify-self: center;
+    align-self: center;
 }
 
 #input_group{
@@ -79,13 +136,13 @@ h4{
 #input_group input{
     border-radius: 10px;
     border: none;
-    margin: 0.5rem;
+    margin: 1rem;
     padding: 0.75rem;
     width: 80%;
 }
 
 #input_group button{
-    background-color: #DA0303;
+    background-color: #F72900;
     border: none;
     color: #f5f5f5;
     padding: 0px 1.25rem;
@@ -102,33 +159,91 @@ h4{
     opacity: 0.8;
 }
 
-.video_frame{
-    width: 100%;
-    height: 17rem;
+
+.curso{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    flex-direction: column;
+    padding:1rem;
+    margin: 2rem;
+    height: 95%;
+    width: 30%;
     border-radius: 10px;
+    background: #16202B;
 }
 
-.img_slider{
-    background: #080708;
-    margin: auto;
+.curso h2{
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+}
+
+.curso h3{
+    padding: 0 2.5rem;
+}
+
+.curso img{
+    justify-self: center;
+    align-self: center;
+    max-height: 50%;
+    margin: 1rem;
+}
+
+.container_images{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_images h2{
+    margin-bottom: 2rem;
+}
+
+.imgs_gallery{
+    background: #16202B;
+    padding: 2rem;
     width: 65%;
     height: 100%;
     border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-auto-rows: 20rem;
+    grid-auto-flow: dense;
+    grid-gap: 1rem;
+}
+
+.imgs_gallery .grid_item{
+    position: relative;
+    margin-top: 2rem;
+    background-color: #F5F5F5;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imgs_gallery .grid_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.imgs_gallery .grid_item:hover img{
+    transform: scale(1.1);
+}
+
+.imgs_gallery .grid_item a{
+    cursor: zoom-in;
 }
 
 .info_text img{
     padding-top: 2rem;
     max-width: 80%;
+    margin-bottom: 2rem;
 }
 
 .info_text{
-    width: 500px;
-    padding: 2.5%;
+    width: 30vw;
+    padding: 0 2rem;
 }
 
 .info_text h3{
@@ -142,7 +257,7 @@ h4{
 
 .benefits{
     margin-top: 4.5rem;
-    max-width: 30rem;
+    max-width: 30%;
 }
 
 .benefit {
@@ -152,14 +267,14 @@ h4{
     padding: 1rem;
     gap: 2rem;
     border-radius: 10px;
-    background: #080708;
+    background: #16202B;
     margin-bottom: 3rem;
 }
 
 .benefit i {
     
     font-size: 3rem;
-    color: #f5f5f5;
+    color: #F72900;
     margin: 1rem;
 }
 
@@ -197,7 +312,7 @@ h4{
 }
 
 .low_bar{
-    background: #080708;
+    background: #16202B;
     width: 55vw;
     height: 3rem;
     margin-top: 1rem;
@@ -206,14 +321,14 @@ h4{
 }
 
 .low_filling{
-    background: #3AAFB9;
+    background: #7939FF;
     height: 100%;
     width: 25%;
     border-radius: 25px;
 }
 
 .medium_bar{
-    background: #080708;
+    background: #16202B;
     width: 55vw;
     height: 3rem;
     margin-top: 1rem;
@@ -222,14 +337,14 @@ h4{
 }
 
 .medium_filling{
-    background: #DA0303;
+    background: #F72900;
     height: 100%;
     width: 50%;
     border-radius: 25px;
 }
 
 .high_bar{
-    background: #080708;
+    background: #16202B;
     width: 55vw;
     height: 3rem;
     margin-top: 1rem;
@@ -238,10 +353,16 @@ h4{
 }
 
 .high_filling{
-    background: #FFBA08;
+    background: #F5F5F5;
     height: 100%;
     width: 75%;
     border-radius: 25px;
+}
+
+.high_bar h3{
+    margin: 2vw 15vw;
+    position: absolute;
+    color: #7939FF;
 }
 
 .footer_link{
@@ -249,7 +370,7 @@ h4{
 }
 
 #footer_content{
-    background-color: #080708;
+    background-color: #16202B;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
@@ -284,12 +405,6 @@ h4{
     opacity: 0.8;
 }
 
-.footer_logo img{
-    height: 2rem;
-    width: 2rem;
-    border-radius: 50%;
-}
-
 .footer_list{
     display: flex;
     flex-direction: column;
@@ -312,7 +427,7 @@ h4{
 }
 
 .footer_list .footer_link:hover{
-    color:  #DA0303;
+    color:  #F72900;
 }
 
 #footer_subscribe{
@@ -322,8 +437,8 @@ h4{
     text-align: center;
 }
 
-#footer_subscribe p{
-    color: #f5f5f5;
+#footer_subscribe h4{
+    margin-bottom: 0;
 }
 
 #footer_copyright{
@@ -335,4 +450,120 @@ h4{
     padding: 1.5rem;
     font-weight: 300;
     letter-spacing: 2px;
+}
+
+#footer_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#f5f5f5;
+    background: #F72900;
+    border-radius: 10px;
+    width: 254px;
+    height: 227px;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+#footer_logo:hover{
+    background: #040408;
+    color: #F72900;
+    cursor: pointer;
+}
+
+footer h1{
+    font-family: 'Lemon/Milk', sans-serif;
+    font-size: 10rem;
+    font-weight: 300;
+    transition: 0.4s;
+}
+
+@media (max-width: 1220px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container{
+        height: 110%;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10% 0%;
+    }
+
+    .video{
+        height: 40vh;
+        width: 90vw;
+    }
+
+    .video_frame{
+        padding: 2rem;
+    }
+
+    .video_frame h2{
+        text-align: start;
+    }
+
+    .intro{
+        padding: 2rem;
+        height: 95%;
+        width: 100vw;
+        background: #16202B;
+        border-radius: 0px;
+    }
+
+    .forms{
+        padding: 2rem;
+        height: 600px;
+        width: 100vw;
+        margin-bottom: 10rem;
+    }
+
+    .curso{
+        padding:2rem;
+        width: 80vw;
+        border-radius: 10px;
+        background: #16202B;
+    }
+    .imgs_gallery{
+        width: 100vw;
+    }
+
+    .imgs_gallery .grid_item{
+        height: 80%;
+        width: 80%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .info_text{
+        width: 100vw;
+        padding: 0 2rem;
+    }
+
+    .benefits{
+        margin-top: 4.5rem;
+        max-width: 80vw;
+    }
+
+    .salary_container{
+        padding-top: 10%;
+    }
+
+    #footer_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+
 }
